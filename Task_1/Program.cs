@@ -1,8 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Enter first name");
-string First_Number=Console.ReadLine();
-Console.WriteLine("Enter second name");
-string Second_Number=Console.ReadLine();
-Console.Write(First_Number);
-Console.Write(" ");
-Console.Write(Second_Number);
+﻿int number1 = 8;
+int number2 = 3;
+int number3 = number2 * number2;
+Console.Write("First number: ");
+Console.WriteLine(number1);
+Console.Write("Second number: ");
+Console.WriteLine(number2);
+if(number1 == number3){
+    Console.WriteLine("The first number is the square of the second");
+}
+else 
+   Console.WriteLine("The first number isn't the square of the second");
