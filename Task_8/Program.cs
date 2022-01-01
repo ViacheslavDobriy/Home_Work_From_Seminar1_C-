@@ -8,9 +8,12 @@ int RemainFunction(int number1, int number2)
     int result = number1 % number2;
     return result;
 }
+void CheckMultiple(int remain, int number1, int number2)
+{
+    if (remain==0)
+    Console.WriteLine("{0} кратно {1}", number2, number1);
+    else 
+    Console.WriteLine($"{number2} не кратно {number1}, остаток от деления равен {remain}");
+}
 int Remains = RemainFunction(firstUserNumber, secondUserNumber);
-if (Remains==0){
-    Console.WriteLine("{0} кратно {1}", secondUserNumber, firstUserNumber);
-}
-else {Console.WriteLine($"{secondUserNumber} не кратно {firstUserNumber}, остаток от деления равен {Remains}");
-}
+CheckMultiple(Remains, firstUserNumber, secondUserNumber);
