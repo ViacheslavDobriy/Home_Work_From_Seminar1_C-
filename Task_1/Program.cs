@@ -4,13 +4,11 @@ int SquareOfNumber(int number1)
     int Result = number1*number1;
     return Result;
 }
-int number1 = 9;
-int number2 = 3;
+Console.Write("Enter first number: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter second number: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
 int number3 = SquareOfNumber(number2);
-Console.Write("First number: ");
-Console.WriteLine(number1);
-Console.Write("Second number: ");
-Console.WriteLine(number2);
 if(number1 == number3){
     Console.WriteLine("The first number is the square of the second");
 }
