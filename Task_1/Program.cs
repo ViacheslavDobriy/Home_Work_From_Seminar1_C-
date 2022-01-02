@@ -1,6 +1,12 @@
-﻿int number1 = 8;
+﻿// Проверить является ли первое число квадратом второго
+int SquareOfNumber(int number1)
+{
+    int Result = number1*number1;
+    return Result;
+}
+int number1 = 9;
 int number2 = 3;
-int number3 = number2 * number2;
+int number3 = SquareOfNumber(number2);
 Console.Write("First number: ");
 Console.WriteLine(number1);
 Console.Write("Second number: ");
